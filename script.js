@@ -1,5 +1,5 @@
 function threeSum(arr, target)  {
-	let closestsum  = Infinity;
+	let closestSum  = Infinity;
 	let finalsum;
   for (let i = 0; i < arr.length - 2; i++) {
     let sum = 0;
@@ -10,20 +10,18 @@ function threeSum(arr, target)  {
       return sum;
     }
 
-   let currentdif = Math.abs(sum-target);
-	  
-    if (currentdif<closestsum) {
-	     closestsum = currentdif;
-		finalsum = sum;
-     }
-	  
-      }
-	  return finalsum
-                    
+   let currentDiff = Math.abs(sum - target);
+
+    if (currentDiff < Math.abs(closestSum - target)) {
+      closestSum = sum;
+    }
   }
+
+  return closestSum; // Return the closest sum found when the exact target sum is not found.
+}
+
 module.exports = threeSum;
 
-  
 
 // let arr = [1, 2, 4, 3];
 // console.log(threeSum(arr, 5));
