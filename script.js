@@ -10,7 +10,7 @@ function threeSum(arr, target)  {
       return sum;
     }
 
-   let currentdif = Math.abs(sum-target);
+   let currentdif = (sum-target);
 	  
     if (currentdif<closestsum) {
 	     closestsum = currentdif;
@@ -18,8 +18,7 @@ function threeSum(arr, target)  {
      }
 	  
       }
-	  return finalsum
-                    
+	  return finalsum 
   }
 
 module.exports = threeSum;
