@@ -10,15 +10,17 @@ function threeSum(arr, target)  {
       return sum;
     }
 
-   let currentDiff = Math.abs(sum - target);
-
-    if (currentDiff < Math.abs(closestSum - target)) {
-      closestSum = sum;
-    }
+   let currentdif = Math.abs(sum-target);
+	  
+    if (currentdif<closestsum) {
+	     closestsum = currentdif;
+		finalsum = sum;
+     }
+	  
+      }
+	  return finalsum
+                    
   }
-
-  return closestSum; // Return the closest sum found when the exact target sum is not found.
-}
 
 module.exports = threeSum;
 
