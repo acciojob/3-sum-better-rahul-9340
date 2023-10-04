@@ -1,5 +1,5 @@
 function threeSum(arr, target)  {
-	let closestSum  = Infinity;
+	let closestsum  = Infinity;
 	let finalsum;
   for (let i = 0; i < arr.length - 2; i++) {
     let sum = 0;
@@ -22,6 +22,7 @@ function threeSum(arr, target)  {
 
 module.exports = threeSum;
 
+  
 
 // let arr = [1, 2, 4, 3];
 // console.log(threeSum(arr, 5));
