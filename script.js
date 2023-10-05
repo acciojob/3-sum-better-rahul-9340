@@ -29,6 +29,4 @@ function threeSum(arr,target) {
   return closestsum; // Return the closest sum when target sum is not found
 }
 
-let arr = [1, 2, 5, 2, 2];
-console.log(threeSum(arr, 5)); // Returns 5 because it found the target sum
-
+ module.exports = threeSum;
