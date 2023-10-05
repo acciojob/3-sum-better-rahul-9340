@@ -2,7 +2,7 @@ function threeSum(arr,target) {
   const n = arr.length;
   let closestdiff = Infinity;
   let closestsum;
-
+arr.sort((a,b)=>{(a-b)})
   for (let i = 0; i < n - 2; i++) {
     let left = i + 1;
     let right = n - 1;
@@ -17,7 +17,7 @@ function threeSum(arr,target) {
       }
 
       if (sum === target) {
-        return target; // Return the target sum instantly when found
+        return target; 
       } else if (sum < target) {
         left++;
       } else {
@@ -28,5 +28,4 @@ function threeSum(arr,target) {
 
   return closestsum; // Return the closest sum when target sum is not found
 }
-threeSum(arr,target)
  module.exports = threeSum;
