@@ -10,7 +10,7 @@ function threeSum(arr, target)  {
       return sum;
     }
 
-   let currentdif = (sum-target);
+   let currentdif = Math.abs(sum-target);
 	  
     if (currentdif<closestsum) {
 	     closestsum = currentdif;
