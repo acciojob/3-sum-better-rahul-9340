@@ -28,5 +28,5 @@ function threeSum(arr,target) {
 
   return closestsum; // Return the closest sum when target sum is not found
 }
-
+threeSum(arr,target)
  module.exports = threeSum;
